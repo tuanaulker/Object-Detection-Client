@@ -11,6 +11,8 @@ import { HomeTableComponent } from './components/home-table/home-table.component
 import { ErrorComponent } from './components/error/error.component';
 import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 import { MenubarModule } from 'primeng/menubar';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { MenubarModule } from 'primeng/menubar';
     BrowserAnimationsModule,
     ButtonModule,
     TableModule,
+    FormsModule,
     MenubarModule
     
   ],

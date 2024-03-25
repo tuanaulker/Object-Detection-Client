@@ -3,22 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeTableComponent, LoginComponent, AdminPanelComponent, ErrorComponent } from './components';
 
 export const routes: Routes = [
-  {
-    path: "",
-    component: HomeTableComponent
-  },
-  {
-    path: "login",
-    component: LoginComponent
-  },
-  {
-    path: "admin-panel",
-    component: AdminPanelComponent
-  },
-  {
-    path: "**",
-    component: ErrorComponent
-  },
+  { path: "", redirectTo: "/login", pathMatch: "full" }, //bu kod satırı boş yolu login sayfasına yönlendirecek.
+  {path: "login",component: LoginComponent},
+  {path: "admin-panel",component: AdminPanelComponent},
+  {path: "",component: HomeTableComponent},
+  {path: "**", component: ErrorComponent},
 ];
 
 @NgModule({
